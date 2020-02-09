@@ -1,0 +1,81 @@
+
+  <div class="container-fluid" *ngIf="country"> <!--ngIf used to show the single country detail-->
+    <h2 class="text-center">{{country.name}}</h2>
+    <div class="row" [ngStyle]="{'background-image': 'url(' + country.flag + ')'}" ></div> 
+     
+        <div class="table-responsive" style="margin-top: 6%;">
+
+            <table class="table table-bordered"> <!--table to show the detailed information of the country-->
+                <tbody>
+                    <tr>
+                      <td class="text-center">Capital City</td>
+                      <td class="text-center" style="font-weight: bold;">{{country.capital}}</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">Sub-Region</td>
+                        <td class="text-center"  style="font-weight: bold;">{{country.subregion}}</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">TopLevelDomain</td>
+                        <td class="text-center"  style="font-weight: bold;">{{country.topLevelDomain}}</td>
+                       </tr>
+                       <tr>
+                           <td class="text-center">Alpha3Code</td>
+                           <td class="text-center" style="font-weight: bold;">{{country.alpha3Code}}</td>
+                       </tr>
+      
+                       <tr>
+                           <td class="text-center">Calling Code</td>
+                           <td class="text-center" style="font-weight: bold;">{{country.callingCodes}}</td>
+                       </tr>
+      
+                       <tr>
+                           <td class="text-center">Population</td>
+                          <td class="text-center" style="font-weight: bold;">{{country.population}}</td>
+                       </tr>
+      
+                       <tr>
+                           <td class="text-center">Demonym</td>
+                           <td class="text-center"  style="font-weight: bold;">{{country.demonym}}</td>
+                       </tr>
+      
+                      <tr>
+                          <td class="text-center">Numeric Code</td>
+                          <td class="text-center"  style="font-weight: bold;">{{country.numericCode}}</td>
+                      </tr>
+      
+                      <tr>
+                          <td class="text-center">Time Zone</td>
+                          <td class="text-center"  style="font-weight: bold;">{{country.timezones}}</td>
+                      </tr>
+      
+                      <tr>
+                          <td class="text-center">Lanuage</td>
+                          <td class="text-center"  style="font-weight: bold;">
+                          <div *ngFor="let language of country.languages"  >{{language.name}}</div>
+                          </td>
+                      </tr>
+      
+                      <tr>
+                          <td class="text-center">Currency Name|code|symbol</td>
+                          <td class="text-center"  style="font-weight: bold;">
+                              <div *ngFor="let currency of country.currencies"> {{currency.code}} | {{currency.name}} | {{currency.symbol}}</div>
+                          </td>
+                      </tr>
+                    </tbody>
+                    </table>
+
+        
+    
+
+  
+
+    </div>
+    </div>
+
+    
+    
+    
+    
+  
+    

@@ -1,0 +1,51 @@
+
+
+
+.container-fluid {
+    display: block;
+}
+
+
+p.text-right {
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2.text-center {
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+
+}
+
+
+
+.row {
+    background-size: cover;
+    background-position:center;
+   width: 105vw;
+    height: 20em;
+    background-repeat: no-repeat;
+    display:inline-block;
+
+}
+
+.table table-bordered, tr,td {
+    border: solid;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+<!--The component which shows all the countries in the world-->
+
+<div class="container-fluid">
+<h3 class="text-center"> List of Countries</h3>
+<div>
+  <a class="btn btn-warning" (click)="goBackToPreviousPage()"  >Go Back </a>
+</div>
+  <div class="table-responsive" style="margin-top:3%;">
+   <table class="table table-bordered table-striped table-hover table-fixed-header">
+     <thead class="header">
+       <tr>
+         <th class="text-center"> Name</th>
+
+         <th class="text-center">Capital</th>
+
+         <th class="text-center">Currency</th>
+
+         <th class="text-center">Language</th>
+
+         <th class="text-center">Region</th>
+       </tr>
+       </thead>
+       <tbody>
+        <tr *ngFor="let country of allCountries">
+                <td>{{ country.name }}</td>
+                <td>{{ country.capital }}</td>
+                <td>
+                    <div *ngFor="let currency of country.currencies"> {{currency.code}} | {{currency.name}} | {{currency.symbol}}</div>
+                   </td>
+                <td>
+                    <div *ngFor="let language of country.languages" >    {{language.name}}</div>
+                </td>
+                <td>{{country.region}}</td>
+                </tr>
+          </tbody>
+          </table>
+      </div>
+      </div>
+
+    
