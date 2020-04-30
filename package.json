@@ -25,7 +25,7 @@
     "countries-list": "^2.5.0",
     "country-data": "0.0.31",
     "country-list": "^2.2.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "ngx-country-select": "^2.0.6",
     "ngx-image-zoom": "^0.4.1",
     "ngx-pagination": "^5.0.0",
